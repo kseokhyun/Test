@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 double longitude = gpsTracker.getLongitude();
                 String address = getCurrentAddress(latitude, longitude);
                 textview_address.setText(address);
-                Toast.makeText(MainActivity.this, "현재위치 \n위도 " + latitude + "\n경도 " + longitude, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Current location \nLatitude " + latitude + "\nLongitude " + longitude, Toast.LENGTH_LONG).show();
             }
         }
         );
